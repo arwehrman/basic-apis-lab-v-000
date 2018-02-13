@@ -11,8 +11,8 @@
     <% @repos.each do |repo| %>
       <li>
         <%= repo["name"] %><br>
-        <%= repo["location"]["address"] %><br>
-        Checkins: <%= repo["stats"]["checkinsCount"] %>
+        <%= repo["url"] %><br>
+        Checkins: <%= repo["description"] %>
       </li>
     <% end %>
     </ul>
