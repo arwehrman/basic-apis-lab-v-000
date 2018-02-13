@@ -6,9 +6,9 @@
 <% end %>
 
 <div>
-  <% if @repos %>
+  <% if @results %>
     <ul>
-    <% @repos.each do |repo| %>
+    <% @results.each do |repo| %>
       <li>
         <%= repo["name"] %><br>
         <%= repo["description"] %><br>
